@@ -1,0 +1,32 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "ZaiErrorOutput",
+  "description": "Structured error response from the ZAI companion.",
+  "type": "object",
+  "required": [
+    "error",
+    "code"
+  ],
+  "properties": {
+    "error": {
+      "type": "string"
+    },
+    "code": {
+      "type": "string",
+      "enum": [
+        "RATE_LIMITED",
+        "MODEL_UNAVAILABLE",
+        "CLI_ERROR"
+      ]
+    },
+    "model": {
+      "type": "string"
+    },
+    "suggestions": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  }
+}
