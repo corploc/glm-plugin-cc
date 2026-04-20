@@ -1,8 +1,0 @@
-{
-  "name": "glm-plugin",
-  "version": "1.0.0",
-  "description": "Use ZAI CLI (GLM) from Claude Code to review code or delegate tasks.",
-  "author": {
-    "name": "corploc"
-  }
-}
